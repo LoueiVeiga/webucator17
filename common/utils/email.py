@@ -1,9 +1,9 @@
 import sendgrid
 from sendgrid.helpers.mail import Mail
-
+ 
 from django.conf import settings
-
-
+ 
+ 
 def send_email(to, subject, content, sender='michael_galado@emb.gov.ph'):
     sg = sendgrid.SendGridAPIClient(settings.SENDGRID_API_KEY)
     mail = Mail(
